@@ -1,6 +1,5 @@
-// import ReactGA from 'react-ga';
-// import React, { useEffect } from 'react';
-import React from 'react';
+import ReactGA from 'react-ga';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.scss';
 import Home from './components/Home/Home';
@@ -11,12 +10,12 @@ import Home from './components/Home/Home';
 import Navbar from './components/Navbar/Navbar';
 
 function App() {
-  // // ----- Google Analytics ------
-  // useEffect(() => {
-  //   ReactGA.initialize('UA-175233883-1');
-  //   //Reports page views
-  //   ReactGA.pageview(window.location.pathname + window.location.search);
-  // }, []);
+  // ----- Google Analytics ------
+  useEffect(() => {
+    ReactGA.initialize('placeholder');
+    //Reports page views
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
 
   return (
     <Router>

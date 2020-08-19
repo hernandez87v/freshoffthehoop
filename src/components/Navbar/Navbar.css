@@ -1,6 +1,6 @@
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
 header#navbar-header {
-  background-color: rgba(0, 0, 0, 0.418);
+  background-color: #dd8e98;
   position: relative;
   z-index: 1;
 }
@@ -32,6 +32,7 @@ ul.nav__links {
 }
 
 a {
+  text-decoration: none;
   color: white;
 }
 
@@ -46,7 +47,7 @@ a {
 }
 
 .nav__links li a:hover {
-  color: gray;
+  color: #c73f51;
 }
 
 button {
