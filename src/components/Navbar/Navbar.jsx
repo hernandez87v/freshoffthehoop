@@ -26,13 +26,12 @@ export default function Navbar() {
             <Link to="/About">About</Link>
           </li>
           <li>
-            <Link to="/Other">Other</Link>
+            <a className="cta" href="mailto:placeholder">
+              Contact
+            </a>
           </li>
         </ul>
       </nav>
-      <a className="cta" href="mailto:placeholder">
-        <button>Contact</button>
-      </a>
     </header>
   );
 }
