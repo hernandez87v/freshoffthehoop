@@ -1,6 +1,6 @@
 import React from 'react';
 import './Home.scss';
-import Background from './knitting250px_@2X.png';
+import Background from './stitched_wool_@2X.png';
 
 var sectionStyle = {
   top: '0',
@@ -14,11 +14,9 @@ var sectionStyle = {
 
 function Home() {
   return (
-    <>
-      <div className="home">
-        <section style={sectionStyle}> </section>
-      </div>
-    </>
+    <div className="home">
+      <section style={sectionStyle}> </section>
+    </div>
   );
 }
 
