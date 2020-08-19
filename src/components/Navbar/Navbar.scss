@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+
+// Font Variables
+$pacifico: 'Pacifico', serif;
+
+header#navbar-header {
+  background-color: rgba(0, 0, 0, 0.418);
+  position: relative;
+  z-index: 1;
+}
+header {
+  font-family: $pacifico;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 5%;
+  background-color: rgba(0, 0, 0, 0);
+}
+ul.nav__links {
+  background-color: rgba(0, 0, 0, 0);
+}
+.logo {
+  cursor: pointer;
+  font-size: xx-large;
+  font-weight: 700;
+  margin-right: auto;
+}
+a {
+  color: white;
+}
+.nav__links {
+  li {
+    display: inline-block;
+    padding: 0px 20px;
+    a {
+      transition: all 0.5s ease 0s;
+      &:hover {
+        color: gray;
+      }
+    }
+  }
+}
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  &:hover {
+    background-color: rgba(245, 245, 245, 0.8);
+  }
+}
+@media screen and (max-width: 700px) {
+  h2.logo {
+    align-items: center;
+    margin: auto;
+    padding: 0;
+  }
+  ul.nav__links {
+    align-items: baseline;
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+@media screen and (max-width: 630px) {
+  header#navbar-header {
+    display: flex;
+    flex-direction: column;
+  }
+  button {
+    margin: 10px 0px 0px 0px;
+    padding: 6px 20px;
+  }
+}

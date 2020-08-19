@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+header#navbar-header {
+  background-color: rgba(0, 0, 0, 0.418);
+  position: relative;
+  z-index: 1;
+}
+
+header {
+  font-family: "Pacifico", serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 5%;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+ul.nav__links {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.logo {
+  cursor: pointer;
+  font-size: xx-large;
+  font-weight: 700;
+  margin-right: auto;
+}
+
+a {
+  color: white;
+}
+
+.nav__links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav__links li a {
+  -webkit-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+}
+
+.nav__links li a:hover {
+  color: gray;
+}
+
+button {
+  margin-left: 20px;
+  padding: 9px 25px;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+button:hover {
+  background-color: rgba(245, 245, 245, 0.8);
+}
+
+@media screen and (max-width: 700px) {
+  h2.logo {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: auto;
+    padding: 0;
+  }
+  ul.nav__links {
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 0;
+    padding: 20px 0;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  header#navbar-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  button {
+    margin: 10px 0px 0px 0px;
+    padding: 6px 20px;
+  }
+}
+/*# sourceMappingURL=Navbar.css.map */
