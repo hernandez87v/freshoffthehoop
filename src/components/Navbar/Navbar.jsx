@@ -18,17 +18,6 @@ export default function Navbar() {
         <ul className="nav__links">
           <li>
             <ReactGA.OutboundLink
-              eventLabel="Etsy_shop"
-              to="https://www.etsy.com/ca/shop/FreshOffTheHoopCA"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="fa fa-etsy"
-            >
-              Shop
-            </ReactGA.OutboundLink>
-          </li>
-          <li>
-            <ReactGA.OutboundLink
               eventLabel="Instagram_social"
               to="https://www.instagram.com/freshoffthehoop/"
               target="_blank"
