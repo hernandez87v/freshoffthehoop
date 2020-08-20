@@ -17,7 +17,8 @@ function Home() {
     <div className="home">
       {/* <section style={sectionStyle}> </section> */}
       <h1>Fresh Off The Hoop</h1>
-      <button>Shop Now!</button>
+      {/* <button>Shop Now!</button> */}
+      <button class="draw">Show Now!</button>
     </div>
   );
 }
