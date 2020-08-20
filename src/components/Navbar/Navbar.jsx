@@ -23,6 +23,17 @@ export default function Navbar() {
             </ReactGA.OutboundLink>
           </li>
           <li>
+            <ReactGA.OutboundLink
+              eventLabel="Instagram_social"
+              to="https://www.instagram.com/freshoffthehoop/"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="fab fa-instagram"
+            >
+              Instagram
+            </ReactGA.OutboundLink>
+          </li>
+          <li>
             <Link to="/About">About</Link>
           </li>
           <li>
