@@ -1,0 +1,18 @@
+// Font Variables
+$pacifico: 'Pacifico', serif;
+
+h1 {
+  font-family: $pacifico;
+  color: #dfa7af;
+  margin: 15% 0 5% 0;
+  padding: 0;
+}
+button {
+  font-family: $pacifico;
+  color: white;
+
+  margin: 0;
+  background-color: #e2929e;
+  border-radius: 1em;
+  border-color: #dfa7af;
+}

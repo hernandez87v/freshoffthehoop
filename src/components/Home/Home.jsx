@@ -16,6 +16,8 @@ function Home() {
   return (
     <div className="home">
       <section style={sectionStyle}> </section>
+      <h1>Fresh Off The Hoop</h1>
+      <button>Shop Now!</button>
     </div>
   );
 }
