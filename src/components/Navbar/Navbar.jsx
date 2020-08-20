@@ -6,8 +6,13 @@ import ReactGA from 'react-ga';
 export default function Navbar() {
   return (
     <header id="navbar-header">
-      <h2 className="logo" alt="logo">
-        <a href="/">Fresh Off The Hoop</a>
+      <h2 className="logo">
+        <a href="/" class="pull-left" rel="noopener noreferrer">
+          <img
+            src="https://github.com/hernandez87v/freshoffthehoop/blob/master/public/foth-logo.jpg?raw=true"
+            alt="logo"
+          />
+        </a>
       </h2>
       <nav>
         <ul className="nav__links">
