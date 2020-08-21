@@ -1,10 +1,8 @@
-// Font Variables
-$pacifico: 'Pacifico', serif;
-$neon-pink: #ffdffd;
+@use 'variables';
 
 h1 {
   font-family: $pacifico;
-  color: #dfa7af;
+  color: $primary-color;
   margin: 15% 0 1em 0;
   padding: 0;
 }
@@ -14,7 +12,7 @@ h1 {
 //   margin: 0;
 //   background-color: #e2929e;
 //   border-radius: 1em;
-//   border-color: #dfa7af;
+//   border-color: $primary-color;
 // }
 
 button {
@@ -26,8 +24,8 @@ button {
   padding: 1em 1em;
 
   // Using inset box-shadow instead of border for sizing simplicity
-  box-shadow: inset 0 0 0 2px #dfa7af;
-  color: #dfa7af;
+  box-shadow: inset 0 0 0 2px $primary-color;
+  color: $primary-color;
   font-size: inherit;
   font-weight: 700;
   text-transform: uppercase;
@@ -70,7 +68,7 @@ button {
   }
 
   &:hover {
-    color: $neon-pink;
+    color: $secondary-color;
   }
 
   // Hover styles
@@ -81,20 +79,20 @@ button {
   }
 
   &:hover::before {
-    border-top-color: $neon-pink; // Make borders visible
-    border-right-color: $neon-pink;
+    border-top-color: $secondary-color; // Make borders visible
+    border-right-color: $secondary-color;
     transition: width 0.25s ease-out,
       // Width expands first
         height 0.25s ease-out 0.25s; // And then height
   }
 
   &:hover::after {
-    border-bottom-color: $neon-pink; // Make borders visible
-    border-left-color: $neon-pink;
+    border-bottom-color: $secondary-color; // Make borders visible
+    border-left-color: $secondary-color;
     transition: border-color 0s ease-out 0.5s,
       // Wait for ::before to finish before showing border
         width 0.25s ease-out 0.5s,
-      // And then exanding width
+      // And then expanding width
         height 0.25s ease-out 0.75s; // And finally height
   }
 }

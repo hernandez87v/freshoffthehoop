@@ -1,21 +1,27 @@
 @import url(https://fonts.googleapis.com/css2?family=Pacifico&display=swap);
+/* Social media icons  */
+h2 img {
+  height: 100px;
+  margin: 1px;
+}
+
 header#navbar-header {
-  background-color: #dd8e98;
+  background-color: #dd8e99b6;
   position: relative;
   z-index: 1;
 }
 
 header {
-  font-family: 'Pacifico', serif;
+  font-family: "Pacifico", serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 2px 5%;
   background-color: rgba(0, 0, 0, 0);
 }
@@ -26,8 +32,6 @@ ul.nav__links {
 
 .logo {
   cursor: pointer;
-  font-size: xx-large;
-  font-weight: 700;
   margin-right: auto;
 }
 
@@ -50,41 +54,26 @@ a {
   color: #c73f51;
 }
 
-button {
-  font-family: 'Pacifico', serif;
-  margin-left: 10px;
-  padding: 9px 25px;
-  background-color: whitesmoke;
-  border: none;
-  border-radius: 50px;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-}
-
-button:hover {
-  background-color: rgba(245, 245, 245, 0.8);
-}
-
 @media screen and (max-width: 700px) {
   h2.logo {
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     margin: auto;
     padding: 0;
   }
   ul.nav__links {
     -webkit-box-align: baseline;
-    -ms-flex-align: baseline;
-    align-items: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    padding-left: 0px;
   }
   header {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+        flex-wrap: wrap;
     margin: 0;
     padding: 20px 0;
   }
@@ -97,12 +86,8 @@ button:hover {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-  button {
-    margin: 10px 0px 0px 0px;
-    padding: 6px 20px;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 /*# sourceMappingURL=Navbar.css.map */
