@@ -31,10 +31,13 @@ export default function Navbar() {
             <Link to="/About">About</Link>
           </li>
           <li>
+            <Link to="/Contact">Contact</Link>
+          </li>
+          {/* <li>
             <a className="cta" href="mailto:placeholder">
               Contact
             </a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     </header>
